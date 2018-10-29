@@ -1,0 +1,14 @@
+to start up u need the following 
+
+
+- sync your project with FCM 
+
+- at gradle build : 
+implementation 'com.google.firebase:firebase-messaging:17.3.0'
+implementation 'com.google.firebase:firebase-core:16.0.3
+
+- at gradle project : 
+dependencies {
+        classpath 'com.google.gms:google-services:4.0.1'
+}
+
