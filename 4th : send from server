@@ -1,0 +1,27 @@
+https://fcm.googleapis.com/fcm/send
+
+headers 
+
+Content-Type : application/json
+Authorization : key=AIzaSyAn-XVRZC-SfX1VeWOR26tvDn71mBTHOXQ 
+
+you will find the key in project setting at firebase 
+
+
+body 
+
+{
+ "condition": "'weather' in topics || 'cats' in topics",
+ "notification" : {
+ "body" : "great match!",
+ "title" : "Portugal vs. Denmark",
+ "content_available" : true,
+ "priority" : "high"
+ },
+ "data" : {
+ "body" : "great match!",
+ "title" : "Portugal vs. Denmark",
+ "content_available" : true,
+ "priority" : "high"
+ } 
+}
