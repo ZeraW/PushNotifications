@@ -26,3 +26,26 @@ public class MyFireBaseInstanceService extends FirebaseMessagingService {
         new CustomNotification(getApplicationContext()).startNewNotification(title, body, R.drawable.ic_notifications);
     }
 }
+
+
+at manifest 
+
+
+1 - add the service 
+<service android:name=".MyFireBaseInstanceService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        
+2 - add these meta data to your application 
+
+// this will handle the closed app ondestroy icon and color
+
+ <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/ic_notifications" />
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorAccent" />
