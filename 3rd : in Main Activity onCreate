@@ -1,0 +1,16 @@
+// this is the topic u can add the Tokenid , somthing what ever 
+
+
+FirebaseMessaging.getInstance().subscribeToTopic("weather")
+                .addOnCompleteListener(new OnCompleteListener<Void>() {
+                    @Override
+                    public void onComplete(@NonNull Task<Void> task) {
+                        String msg = "win";
+                        if (!task.isSuccessful()) {
+                            msg = "lose";
+                        }
+                        Log.d("ddd", msg);
+                        Toast.makeText(MainActivity.this, msg, Toast.LENGTH_SHORT).show();
+                    }
+                });
+    }
