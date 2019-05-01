@@ -78,6 +78,7 @@ public class MobileToMobileMSG {
         queue.add(jsonObjReq);
     }
 
+// call this method to send the notifcation
     public void sendMSG(String title, String body, String userID){
         sendNote(mObject(title,body,userID));
     }
