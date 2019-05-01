@@ -13,4 +13,4 @@ FirebaseMessaging.getInstance().subscribeToTopic("weather")
                         Toast.makeText(MainActivity.this, msg, Toast.LENGTH_SHORT).show();
                     }
                 });
-    }
+    
