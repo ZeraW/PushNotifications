@@ -6,8 +6,6 @@ import android.os.Build;
 import android.support.v4.app.NotificationCompat;
 import android.support.v4.app.NotificationManagerCompat;
 
-import com.digitalsigma.sultanapp.R;
-
 public class CustomNotification {
     private Context context;
 
